@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="ChillBoyzClub — a minimal, moody gallery for photos and short videos."
+    />
+    <title>CHILLBOYZCLUB</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="noise"></div>
+
+    <header class="site-header">
+      <nav class="nav container">
+        <div class="brand" aria-label="ChillBoyzClub home">
+          <span class="brand-mark">CB</span>
+          <span class="brand-name">CHILLBOYZCLUB</span>
+        </div>
+
+        <div class="nav-links">
+          <a href="#archive">Archive</a>
+          <a href="#motion">Motion</a>
+          <a href="#journal">Journal</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <a class="nav-cta" href="#contact">Book</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero container">
+        <div class="hero-copy">
+          <p class="eyebrow">No clutter. Just the frame.</p>
+          <h1>Modern edge. <span>Quiet power.</span></h1>
+          <p class="lede">
+            A dark, stripped-back gallery for photos and short films built for the
+            chillest rooms, late-night streets, and the moments that feel too real for
+            filters.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button primary" href="#archive">View archive</a>
+            <a class="button secondary" href="#motion">Watch reels</a>
+          </div>
+
+          <ul class="hero-meta" aria-label="site stats">
+            <li><strong>120+</strong><span>frames</span></li>
+            <li><strong>08</strong><span>films</span></li>
+            <li><strong>24/7</strong><span>vibes</span></li>
+          </ul>
+        </div>
+
+        <div class="hero-visual" aria-label="featured image collage">
+          <div class="visual-card tall">
+            <span class="card-tag">Night set</span>
+          </div>
+          <div class="visual-card medium"></div>
+          <div class="visual-card small"></div>
+        </div>
+      </section>
+
+      <section id="archive" class="gallery-section container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Archive</p>
+            <h2>Still frames.</h2>
+          </div>
+
+          <div class="filters" aria-label="Gallery filters">
+            <button class="filter active" data-filter="all">All</button>
+            <button class="filter" data-filter="street">Street</button>
+            <button class="filter" data-filter="portraits">Portraits</button>
+            <button class="filter" data-filter="travel">Travel</button>
+          </div>
+        </div>
+
+        <div class="gallery-grid">
+          <article class="gallery-item" data-category="street">
+            <div class="media media-one"></div>
+            <div class="caption">
+              <span>Street / 01</span>
+              <h3>Shadows at 2:14 AM</h3>
+            </div>
+          </article>
+
+          <article class="gallery-item" data-category="portraits">
+            <div class="media media-two"></div>
+            <div class="caption">
+              <span>Portraits / 02</span>
+              <h3>Low light, clean lines</h3>
+            </div>
+          </article>
+
+          <article class="gallery-item" data-category="travel">
+            <div class="media media-three"></div>
+            <div class="caption">
+              <span>Travel / 03</span>
+              <h3>Between stations</h3>
+            </div>
+          </article>
+
+          <article class="gallery-item" data-category="street">
+            <div class="media media-four"></div>
+            <div class="caption">
+              <span>Street / 04</span>
+              <h3>Concrete heat</h3>
+            </div>
+          </article>
+
+          <article class="gallery-item" data-category="portraits">
+            <div class="media media-five"></div>
+            <div class="caption">
+              <span>Portraits / 05</span>
+              <h3>Stillness in motion</h3>
+            </div>
+          </article>
+
+          <article class="gallery-item" data-category="travel">
+            <div class="media media-six"></div>
+            <div class="caption">
+              <span>Travel / 06</span>
+              <h3>Glass reflections</h3>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="motion" class="video-section container">
+        <div class="section-heading compact">
+          <div>
+            <p class="eyebrow">Motion</p>
+            <h2>Short cuts.</h2>
+          </div>
+        </div>
+
+        <div class="video-grid">
+          <article class="video-card large">
+            <video controls muted playsinline poster="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1200&q=80">
+              <source src="https://videos.pexels.com/video-files/853889/853889-hd_1920_1080.mp4" type="video/mp4" />
+            </video>
+            <div class="video-copy">
+              <span>Reel / 01</span>
+              <h3>Afterdark drift</h3>
+            </div>
+          </article>
+
+          <article class="video-card small">
+            <video controls muted playsinline poster="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?auto=format&fit=crop&w=1200&q=80">
+              <source src="https://videos.pexels.com/video-files/804303/804303-hd_1920_1080.mp4" type="video/mp4" />
+            </video>
+            <div class="video-copy">
+              <span>Reel / 02</span>
+              <h3>Wired city</h3>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="journal" class="journal container">
+        <div class="section-heading compact">
+          <div>
+            <p class="eyebrow">Journal</p>
+            <h2>Notes from the edge.</h2>
+          </div>
+        </div>
+
+        <div class="journal-grid">
+          <article class="journal-card">
+            <span class="meta">05 / 08 / 2026</span>
+            <h3>Minimal frames hit harder when the room is quiet.</h3>
+            <p>
+              Keeping the attention on texture, contrast, and motion — less noise, more
+              presence.
+            </p>
+          </article>
+
+          <article class="journal-card">
+            <span class="meta">11 / 08 / 2026</span>
+            <h3>Night shoots prefer patience over polish.</h3>
+            <p>
+              The best shots usually happen when everything else drops out and the light
+              starts talking.
+            </p>
+          </article>
+
+          <article class="journal-card">
+            <span class="meta">18 / 08 / 2026</span>
+            <h3>Strong visuals make a quiet statement.</h3>
+            <p>
+              Simple layout, strong pacing, and direct visuals do the rest.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact" class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>ChillBoyzClub</h2>
+        </div>
+
+        <a href="mailto:hello@chillboyzclub.website">hello@chillboyzclub.website</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+																																																																																																																																																																
+																																																																																																																																																																																																																																																																																																																																																																																																																																																													
