@@ -1,27 +1,17 @@
 # chillboyzclub-website
 
-A minimal, dark, modern gallery site for `chillboyzclub.website` with a moody editorial aesthetic, photo archive, and short-video section.
+Minimal, text-free static photo and video gallery for `chillboyzclub.website`.
 
-## Local preview
+## Preview
 
-Open `index.html` directly in a browser, or run a simple local server:
+Open `index.html` in a browser or run `python3 -m http.server 8000` and visit `http://localhost:8000`.
 
-```bash
-python3 -m http.server 8000
-```
+## Media
 
-Then visit `http://localhost:8000`.
+The current gallery uses stock-photo and sample-video URLs as visual placeholders. Replace the media URLs in `index.html` with assets you own or have permission to publish.
 
-## Deployment
+## Hosting and uploads
 
-This project is designed to work well with GitHub Pages or any static hosting provider. For a custom domain like `chillboyzclub.website`, connect the site to your hosting provider and point the DNS records to the provider.
+This repository is a static GitHub Pages site. GitHub Pages cannot provide a private `/admin` login or accept authenticated uploads by itself. A real upload portal needs a server-side backend or a managed storage service with authentication and access controls. Do not put an admin password or storage secret in this public repository or browser code.
 
-## Customizing the content
-
-Replace the existing photo URLs and video sources in `index.html` with your own assets to match your gallery.
-
-## Files
-
-- `index.html` — page structure
-- `styles.css` — design and layout
-- `script.js` — gallery category filtering
+Before publishing intimate imagery, ensure every person shown is an adult and has explicitly consented to its publication. Consider restricting access to the gallery as well as the upload portal.
