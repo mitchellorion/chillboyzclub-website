@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Admin</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="admin-shell">
+      <form id="login-form" class="panel login-panel">
+        <label for="password">Password</label>
+        <input id="password" type="password" name="password" placeholder="Enter password" />
+        <button type="submit">Enter</button>
+      </form>
+
+      <section id="upload-panel" class="panel hidden">
+        <form id="upload-form" enctype="multipart/form-data">
+          <label for="files">Upload images or videos</label>
+          <input id="files" type="file" name="files" multiple accept="image/*,video/*" />
+          <button type="submit">Upload</button>
+        </form>
+
+        <button id="logout" class="ghost" type="button">Log out</button>
+      </section>
+    </div>
+
+    <script src="/admin.js"></script>
+  </body>
+</html>

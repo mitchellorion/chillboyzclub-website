@@ -1,17 +1,33 @@
-# chillboyzclub-website
+# chillboyzclub-gallery
 
-Minimal, text-free static photo and video gallery for `chillboyzclub.website`.
+This project is a minimal local gallery and upload demo for `chillboyzclub.website`.
 
-## Preview
+## Setup
 
-Open `index.html` in a browser or run `python3 -m http.server 8000` and visit `http://localhost:8000`.
+1. Copy `.env.example` to `.env`.
+2. Set your password in `.env`.
+3. Install dependencies:
 
-## Media
+```bash
+npm install
+```
 
-The current gallery uses stock-photo and sample-video URLs as visual placeholders. Replace the media URLs in `index.html` with assets you own or have permission to publish.
+4. Start the app:
 
-## Hosting and uploads
+```bash
+npm start
+```
 
-This repository is a static GitHub Pages site. GitHub Pages cannot provide a private `/admin` login or accept authenticated uploads by itself. A real upload portal needs a server-side backend or a managed storage service with authentication and access controls. Do not put an admin password or storage secret in this public repository or browser code.
+5. Open:
+   - gallery: `http://localhost:3000/`
+   - admin: `http://localhost:3000/admin`
 
-Before publishing intimate imagery, ensure every person shown is an adult and has explicitly consented to its publication. Consider restricting access to the gallery as well as the upload portal.
+## Notes
+
+- The admin password is stored in `.env` locally, not in public code.
+- The gallery currently renders uploaded images and videos from the `uploads/` folder.
+- This is a local server demo. For real public hosting, do not expose the admin panel on the same public site without proper authentication and secure hosting.
+
+## Production warning
+
+Avoid hardcoding secrets in public Git repositories. Store credentials in a private environment or managed secret store. The exact password can be changed at any time in `.env`.
